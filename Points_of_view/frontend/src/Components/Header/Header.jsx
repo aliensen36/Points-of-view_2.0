@@ -1,6 +1,8 @@
 import React from 'react';
 import '../../Styles/Header.css';
-import logo from '../../Images/logo-ru.svg';
+import logoRu from '../../Images/logo-ru.svg';
+import logoEn from '../../Images/logo-en.svg';
+import logoFr from '../../Images/logo-fr.svg';
 import { useTranslation } from 'react-i18next';
 
 function Header() {
@@ -12,7 +14,7 @@ function Header() {
 
     return <div className="container header-container">
         <div className="header-logo">
-            <img src={logo} alt="logo" />
+            <img src={getLogo()} alt="logo" />
         </div>
         <nav className="header-nav">
             <ul className="header-nav-list">
@@ -28,7 +30,20 @@ function Header() {
             <button onClick={() => changeLanguage("en")} className="lang-change-btn">En</button>
             <button onClick={() => changeLanguage("fr")} className="lang-change-btn">Fr</button>
         </div>
-    </div>
+    </div>;
+
+    function getLogo() {
+        switch (i18n.language) {
+            case 'ru':
+                return logoRu;
+            case 'en':
+                return logoEn;
+            case 'fr':
+                return logoFr;
+            default:
+                return logoRu;
+        }
+    }
 }
 
 export default Header;
