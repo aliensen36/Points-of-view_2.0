@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,1&display=swap');
+
+body {
+  font-family: 'Geologica', sans-serif;
+}
+
+:root {
+  --Black: #171717;
+  --Pink: #C15191;
+  --Green: #198F76;
+  --White: #FFFFFF;
+  --Blue: #799FCC;
+  --Text-Grey: #888686;
+  --font-family: Geologica, sans-serif;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
