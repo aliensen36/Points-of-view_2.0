@@ -24,6 +24,14 @@
     font-weight: 500;
     line-height: 30px;
     color: var(--Black);
+    border-radius: 50%;
+    transition: 0.3s color ease-in-out, 0.3s background-color ease-in-out;
+}
+
+
+.lang-change-btn:hover {
+    color: var(--White);
+    background-color: var(--Pink-Button-Hover);
 }
 
 .lang-change-btn:not(:last-child) {
@@ -32,6 +40,6 @@
 
 .lang-change-btn--active {
     color: var(--White);
-    background-color: var(--Pink);
+    background-color: var(--Pink);    
     border-radius: 50%;
 }
