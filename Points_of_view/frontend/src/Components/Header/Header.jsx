@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../Styles/Header.css';
 import logoRu from '../../Images/logo-ru.svg';
 import logoEn from '../../Images/logo-en.svg';
@@ -7,9 +7,15 @@ import { useTranslation } from 'react-i18next';
 
 function Header() {
     const { t, i18n } = useTranslation();
+    const [activeLanguage, setActiveLanguage] = useState(i18n.language);
 
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
+        setActiveLanguage(language);
+    };
+
+    const changeColorBtn = (language) => {
+        setActiveLanguage(language);
     };
 
     return <div className="container header-container">
@@ -26,9 +32,9 @@ function Header() {
             </ul>
         </nav>
         <div className="lang-change">
-            <button onClick={() => changeLanguage("ru")} className="lang-change-btn lang-change-btn--active">Ru</button>
-            <button onClick={() => changeLanguage("en")} className="lang-change-btn">En</button>
-            <button onClick={() => changeLanguage("fr")} className="lang-change-btn">Fr</button>
+            <button onClick={() => { changeLanguage("ru"); changeColorBtn("ru") }} className={`lang-change-btn ${activeLanguage === 'ru' ? 'lang-change-btn--active' : ''}`}>Ru</button>
+            <button onClick={() => { changeLanguage("en"); changeColorBtn("en") }} className={`lang-change-btn ${activeLanguage === 'en' ? 'lang-change-btn--active' : ''}`}>En</button>
+            <button onClick={() => { changeLanguage("fr"); changeColorBtn("fr") }} className={`lang-change-btn ${activeLanguage === 'fr' ? 'lang-change-btn--active' : ''}`}>Fr</button>
         </div>
     </div>;
 
