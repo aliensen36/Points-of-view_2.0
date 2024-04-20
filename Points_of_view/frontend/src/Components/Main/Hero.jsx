@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import '../../Styles/Hero.css';
 import { useTranslation } from 'react-i18next';
+import { LanguageContext } from '../LanguageContext';
 import titleRu from '../../Images/title-ru.svg';
 import titleEn from '../../Images/title-en.svg';
 import titleFr from '../../Images/title-fr.svg';
 import image from '../../Images/hero.svg';
-import { LanguageContext } from '../LanguageContext';
+import '../../Styles/Hero.css';
 
 function Hero() {
     const { language } = useContext(LanguageContext);
@@ -37,7 +37,7 @@ function Hero() {
             case 'fr':
                 return titleFr;
             default:
-                return titleRu;
+                return titleEn;
         }
     }
 }

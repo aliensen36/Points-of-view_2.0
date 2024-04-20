@@ -6,8 +6,13 @@
     "contacts": "Contacts",
     "hero-subtitle": "We unite creative people in the joint implementation of their talents",
     "hero-btn": "Learn more",
-    "about-subtitle": "WHO ARE WE",
-    "about-p1": "An art laboratory that creates unique things with the help of music, words and graphics, bringing viewers and the works of artists closer together.",
-    "about-p2": "In our space, every participant in the artistic process is an author.",
-    "about-p3": "From the synthesis of common investments and feelings, something new is born here and open to the world to generate new and different points of view."
+    "who-subtitle": "Who are we",
+    "who-p1": "An art laboratory that creates unique things with the help of music, words and graphics, bringing viewers and the works of artists closer together.",
+    "who-p2": "In our space, every participant in the artistic process is an author.",
+    "who-p3": "From the synthesis of common investments and feelings, something new is born here and open to the world to generate new and different points of view.",
+    "projects-subtitle": "Our projects",
+    "projects-p1": "Our projects are based primarily on reflection and attempts to hear your inner voice.",
+    "projects-p2": "Art for awakening.",
+    "team-subtitle": "our team",
+    "team-p1": "Consists of artists from various creative fields. Of these: sound design, visual design, voice acting and verbal creativity."
 }
