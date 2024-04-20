@@ -6,7 +6,7 @@ import { initReactI18next } from 'react-i18next';
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('ru');
+  const [language, setLanguage] = useState('en');
   
   useEffect(() => {
     i18n
@@ -24,7 +24,7 @@ export const LanguageProvider = ({ children }) => {
           }
         },
         lng: language,
-        fallbackLng: 'ru',
+        fallbackLng: 'en',
         interpolation: {
           escapeValue: false
         }

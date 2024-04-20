@@ -12,10 +12,47 @@ body {
   --Blue: #799FCC;
   --Text-Grey: #888686;
   --Pink-Button-Hover: #EE64B3;
+  --BG-Black: #2A2A2A;
   --font-family: Geologica, sans-serif;
+}
+
+.app {
+  position: relative;
 }
 
 .container {
   max-width: 1180px;
   margin: 0 auto;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  margin-left: 300px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  margin-left: 300px;
+  max-width: 680px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.paragraph:last-child {
+  margin-bottom: 50px;
+}
+
+.section-projects,
+.section-team {
+  background-color: var(--BG-Black);
 }

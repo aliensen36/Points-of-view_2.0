@@ -1,0 +1,12 @@
+.projects-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.projects-subtitle {
+    color: var(--White);
+}
+
+.paragraph-projects {
+    color: var(--White);
+}

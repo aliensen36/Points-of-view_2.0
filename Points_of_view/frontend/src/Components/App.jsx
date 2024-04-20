@@ -1,14 +1,16 @@
 import React from 'react';
-import '../Styles/App.css';
+import { LanguageProvider } from './LanguageContext.js';
 import Header from './Header/Header.jsx';
 import Hero from './Main/Hero.jsx';
-import About from './Main/About.jsx';
-import { LanguageProvider } from './LanguageContext.js';
+import Who from './Main/Who.jsx';
+import Projects from './Main/Projects.jsx';
+import Team from './Main/Team.jsx';
+import '../Styles/App.css';
 
 function App() {
   return (
     <LanguageProvider>
-      <div className="App">
+      <div className="app">
         <header className="header">
           <Header />
         </header>
@@ -16,8 +18,14 @@ function App() {
           <section className="section-hero">
             <Hero />
           </section>
-          <section className="section-about">
-            <About />
+          <section className="section-who">
+            <Who />
+          </section>
+          <section className="section-projects">
+            <Projects />
+          </section>
+          <section className="section-team">
+            <Team />
           </section>
         </main>
       </div>
