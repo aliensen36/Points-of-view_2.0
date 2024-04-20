@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import '../../Styles/Header.css';
+import { useTranslation } from 'react-i18next';
+import { LanguageContext } from '../LanguageContext';
 import logoRu from '../../Images/logo-ru.svg';
 import logoEn from '../../Images/logo-en.svg';
 import logoFr from '../../Images/logo-fr.svg';
-import { useTranslation } from 'react-i18next';
-import { LanguageContext } from '../LanguageContext';
+import '../../Styles/Header.css';
 
 function Header() {
     const { language, changeLanguage } = useContext(LanguageContext);
@@ -45,7 +45,7 @@ function Header() {
             case 'fr':
                 return logoFr;
             default:
-                return logoRu;
+                return logoEn;
         }
     }
 }
