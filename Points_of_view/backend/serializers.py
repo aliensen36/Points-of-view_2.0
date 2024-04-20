@@ -1,7 +1,12 @@
 from rest_framework import serializers
 from .models import *
 
-class Send_ideaSerializer(serializers.ModelSerializer):
+class SendIdeaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Send_idea
-        fields = ('name', 'phone', 'email', 'message')
+        fields = ['id', 'name', 'phone', 'email', 'message', 'created', 'is_published']
+
+class EnglishContentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = EnglishContent
+        fields = '__all__'
