@@ -10,3 +10,7 @@
 .paragraph-projects {
     color: var(--White);
 }
+
+.project-img {
+    margin-left: 300px;
+}
