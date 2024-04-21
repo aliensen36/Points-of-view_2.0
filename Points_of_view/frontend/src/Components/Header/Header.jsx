@@ -14,6 +14,10 @@ function Header() {
         changeLanguage(language);
     };
 
+    function NavItem(props) {
+        return <li className="header-nav-item"><a href="#" className="header-nav-link">{props.item}</a></li>
+    }
+
     return (
         <div className="container header-container">
             <div className="header-logo">
@@ -21,11 +25,16 @@ function Header() {
             </div>
             <nav className="header-nav">
                 <ul className="header-nav-list">
-                    <li className="header-nav-item">{t("about")}</li>
+                    {/* <li className="header-nav-item">{t("about")}</li>
                     <li className="header-nav-item">{t("projects")}</li>
                     <li className="header-nav-item">{t("works")}</li>
                     <li className="header-nav-item">{t("team")}</li>
-                    <li className="header-nav-item">{t("contacts")}</li>
+                    <li className="header-nav-item">{t("contacts")}</li> */}
+                    <NavItem item={t("about")} />
+                    <NavItem item={t("projects")} />
+                    <NavItem item={t("works")} />
+                    <NavItem item={t("team")} />
+                    <NavItem item={t("contacts")} />
                 </ul>
             </nav>
             <div className="lang-change">
