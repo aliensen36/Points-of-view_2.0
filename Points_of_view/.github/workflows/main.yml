@@ -28,4 +28,4 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
         branch: master  # Ветка, на которую будет происходить деплой
-        folder: build     # Папка, которую нужно опубликовать
+        folder: frontend/public     # Папка, которую нужно опубликовать
