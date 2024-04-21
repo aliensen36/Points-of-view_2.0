@@ -27,5 +27,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
-        branch: master  #gh-pages Ветка, на которую будет происходить деплой
+        branch: master  # Ветка, на которую будет происходить деплой
         folder: frontend/public     # Папка, которую нужно опубликовать
