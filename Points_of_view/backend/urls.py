@@ -1,7 +1,8 @@
 from django.urls import path, include
 from django.views.decorators.csrf import csrf_exempt
 from . import views
-from .views import SendIdeaListCreateView, SendIdeaDetailView, EnglishContentView
+from .views import SendIdeaListCreateView, SendIdeaDetailView, EnglishContentView, EnglishContentListCreateView, \
+    EnglishContentRetrieveUpdateDestroyView
 
 urlpatterns = [
     # path('', views.index_ru, name='index_ru'),
@@ -14,5 +15,8 @@ urlpatterns = [
     path('send_idea/', SendIdeaListCreateView.as_view(), name='send_idea_list_create'),
     path('send_idea/<int:id>/', SendIdeaDetailView.as_view(), name='send_idea_detail'),
     # path('cors/', csrf_exempt(include('corsheaders.urls'))),
-    path('english-content/', EnglishContentView.as_view(), name='english-content'),
+    # path('english-content/', EnglishContentView.as_view(), name='english-content'),
+    path('english-content/', EnglishContentListCreateView.as_view(), name='english-content-list-create'),
+    path('english-content/<int:pk>/', EnglishContentRetrieveUpdateDestroyView.as_view(), name='english-content-detail'),
+
 ]

@@ -4,6 +4,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
+
 class SendIdeaListCreateView(generics.ListCreateAPIView):
     queryset = Send_idea.objects.all()
     serializer_class = SendIdeaSerializer
@@ -14,6 +15,8 @@ class SendIdeaListCreateView(generics.ListCreateAPIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
 
 class SendIdeaDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Send_idea.objects.all()
@@ -32,7 +35,13 @@ class EnglishContentView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class EnglishContentListCreateView(generics.ListCreateAPIView):
+    queryset = EnglishContent.objects.all()
+    serializer_class = EnglishContentSerializer
 
+class EnglishContentRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = EnglishContent.objects.all()
+    serializer_class = EnglishContentSerializer
 
 
 
