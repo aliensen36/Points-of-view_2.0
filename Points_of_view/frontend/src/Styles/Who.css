@@ -1,8 +1,21 @@
 .who-container {
     padding-top: 80px;
     padding-bottom: 80px;
+    max-width: 880px;
+    margin-left: auto;
 }
 
 .who-subtitle {
     color: var(--Black);
+}
+
+.who-picture-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.who-subtitle-img {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }

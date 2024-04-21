@@ -3,7 +3,7 @@ import React from 'react';
 function Paragraph(props) {
     const { text, classNameSecond } = props;
 
-    return <h2 className={`paragraph ${classNameSecond}`}>{text}</h2>;
+    return <p className={`paragraph ${classNameSecond}`}>{text}</p>;
 }
 
 export default Paragraph;
