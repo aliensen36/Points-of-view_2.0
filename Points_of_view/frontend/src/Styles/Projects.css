@@ -1,10 +1,13 @@
 .projects-container {
     padding-top: 80px;
     padding-bottom: 80px;
+    max-width: 880px;
+    margin-left: auto;
 }
 
 .projects-subtitle {
     color: var(--White);
+    margin-bottom: 39px;
 }
 
 .paragraph-projects {
@@ -12,5 +15,5 @@
 }
 
 .project-img {
-    margin-left: 300px;
+    margin-bottom: 40px;
 }
