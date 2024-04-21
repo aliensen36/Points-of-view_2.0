@@ -1,2 +1,20 @@
-# Environment
-.env
+# Virtual Environment
+venv/
+*.pyc
+*.pyo
+__pycache__/
+
+# Django
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.swp
+*.swo
+*.DS_Store
+*.bak
+*.ini
+
+# React
+node_modules/
+npm-debug.log
