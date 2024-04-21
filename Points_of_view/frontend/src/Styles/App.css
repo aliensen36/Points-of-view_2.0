@@ -27,7 +27,6 @@ body {
 
 .subtitle {
   margin-bottom: 30px;
-  margin-left: 300px;
   font-size: 50px;
   font-style: normal;
   font-weight: 500;
@@ -36,7 +35,7 @@ body {
 }
 
 .paragraph {
-  margin-left: 300px;
+  margin-bottom: 30px;
   max-width: 680px;
   font-size: 30px;
   font-style: normal;
@@ -44,15 +43,12 @@ body {
   line-height: 150%;
 }
 
-.paragraph:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.paragraph:last-child {
+.paragraph:last-of-type {
   margin-bottom: 50px;
 }
 
 .section-projects,
+.section-mission,
 .section-team {
   background-color: var(--BG-Black);
 }

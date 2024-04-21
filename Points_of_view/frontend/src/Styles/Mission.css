@@ -1,0 +1,14 @@
+.mission-continer {
+    padding-top: 40px;
+    padding-bottom: 200px;
+    max-width: 880px;
+    margin-left: auto;
+}
+
+.mission-subtitle {
+    color: var(--White);
+    font-size: 60px;
+    font-style: normal;
+    line-height: 150%;
+    margin-bottom: 50px;
+}

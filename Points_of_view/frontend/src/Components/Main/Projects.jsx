@@ -19,19 +19,21 @@ function Projects() {
     const { language } = useContext(LanguageContext);
     const { t } = useTranslation();
 
-    return <div className="container projects-container">
-        <Subtitle text={t("projects-subtitle")} classNameSecond="projects-subtitle" />
-        <Paragraph text={t("projects-p1")} classNameSecond="paragraph-projects" />
-        <Paragraph text={t("projects-p2")} classNameSecond="paragraph-projects" />
+    return <div className="container">
+        <div className="projects-container">
+            <Subtitle text={t("projects-subtitle")} classNameSecond="projects-subtitle" />
+            <Paragraph text={t("projects-p1")} classNameSecond="paragraph-projects" />
+            <Paragraph text={t("projects-p2")} classNameSecond="paragraph-projects" />
 
-        <div className="project-img project-feel-img">
-            <img src={getFeelImage()} alt="feel" />
-        </div>
-        <div className="project-img project-meditate-img">
-            <img src={getMeditateImage()} alt="meditate" />
-        </div>
-        <div className="project-img project-think-img">
-            <img src={getThinkImage()} alt="think" />
+            <div className="project-img project-feel-img">
+                <img src={getFeelImage()} alt="feel" />
+            </div>
+            <div className="project-img project-meditate-img">
+                <img src={getMeditateImage()} alt="meditate" />
+            </div>
+            <div className="project-img project-think-img">
+                <img src={getThinkImage()} alt="think" />
+            </div>
         </div>
     </div>
 

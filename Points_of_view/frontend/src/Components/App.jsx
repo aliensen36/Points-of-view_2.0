@@ -4,6 +4,7 @@ import Header from './Header/Header.jsx';
 import Hero from './Main/Hero.jsx';
 import Who from './Main/Who.jsx';
 import Projects from './Main/Projects.jsx';
+import Mission from './Main/Mission.jsx';
 import Team from './Main/Team.jsx';
 import '../Styles/App.css';
 
@@ -23,6 +24,9 @@ function App() {
           </section>
           <section className="section-projects">
             <Projects />
+          </section>
+          <section className="section-mission">
+            <Mission />
           </section>
           <section className="section-team">
             <Team />
