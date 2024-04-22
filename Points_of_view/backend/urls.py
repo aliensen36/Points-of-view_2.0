@@ -1,5 +1,7 @@
-from django.urls import path, include
+from django.urls import path, include, re_path
 from django.views.decorators.csrf import csrf_exempt
+from django.views.generic import TemplateView
+
 from . import views
 from .views import SendIdeaListCreateView, SendIdeaDetailView, EnglishContentView, EnglishContentListCreateView, \
     EnglishContentRetrieveUpdateDestroyView
@@ -18,5 +20,6 @@ urlpatterns = [
     # path('english-content/', EnglishContentView.as_view(), name='english-content'),
     path('english-content/', EnglishContentListCreateView.as_view(), name='english-content-list-create'),
     path('english-content/<int:pk>/', EnglishContentRetrieveUpdateDestroyView.as_view(), name='english-content-detail'),
-
+    re_path(r'^.*', TemplateView.as_view(template_name='index.html')),
 ]
+
