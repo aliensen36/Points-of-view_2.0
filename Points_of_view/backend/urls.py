@@ -7,7 +7,7 @@ from .views import SendIdeaListCreateView, SendIdeaDetailView, EnglishContentVie
     EnglishContentRetrieveUpdateDestroyView
 
 urlpatterns = [
-    # path('', views.index_ru, name='index_ru'),
+    # path('', views.index, name='index'),
     # path('ru/', views.index_ru, name='index_ru'),
     # path('en/', views.index_en, name='index_en'),
     # path('fr/', views.index_fr, name='index_fr'),
