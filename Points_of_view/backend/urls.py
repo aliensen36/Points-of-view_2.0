@@ -20,6 +20,6 @@ urlpatterns = [
     # path('english-content/', EnglishContentView.as_view(), name='english-content'),
     path('english-content/', EnglishContentListCreateView.as_view(), name='english-content-list-create'),
     path('english-content/<int:pk>/', EnglishContentRetrieveUpdateDestroyView.as_view(), name='english-content-detail'),
-    re_path(r'^.*', TemplateView.as_view(template_name='index.html')),
+    # re_path(r'^.*', TemplateView.as_view(template_name='index.html')),
 ]
 
