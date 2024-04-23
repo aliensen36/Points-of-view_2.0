@@ -6,6 +6,7 @@ import Who from './Main/Who.jsx';
 import Projects from './Main/Projects.jsx';
 import Mission from './Main/Mission.jsx';
 import Team from './Main/Team.jsx';
+import Idea from './Main/Idea.jsx';
 import '../Styles/App.css';
 
 function App() {
@@ -31,7 +32,13 @@ function App() {
           <section className="section-team">
             <Team />
           </section>
+          <section className="section-idea">
+            <Idea />
+          </section>
         </main>
+        <footer className="footer">
+
+        </footer>
       </div>
     </LanguageProvider>
   );
