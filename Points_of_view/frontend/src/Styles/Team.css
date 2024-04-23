@@ -12,3 +12,51 @@
 .paragraph-team {
     color: var(--White);
 }
+
+.team-cards-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.team-card {
+    padding: 20px 20px 15px;
+}
+
+.team-card-1 {
+    background-color: var(--Pink);
+}
+
+.team-card-2 {
+    background-color: var(--Blue);
+}
+
+.team-card-3 {
+    background-color: var(--Green);
+}
+
+.team-card-image {
+    margin-bottom: 20px;
+}
+
+.team-card-subtitle {
+    margin-bottom: 10px;
+    color: var(--White);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.team-card-role {
+    color: var(--White);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: -0.15px;
+}
+
+.team-btn {
+    margin-right: 30px;
+}
