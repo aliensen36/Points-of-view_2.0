@@ -22,5 +22,10 @@
     "team-card-role-1": "Conservateur de laboratoire",
     "team-card-role-2": "Artiste numérique",
     "team-card-role-3": "Musicien, concepteur sonore",
-    "idea-text": "Notre laboratoire est ouvert à de nouvelles propositions et coopérations."
+    "idea-text": "Notre laboratoire est ouvert à de nouvelles propositions et coopérations.",
+    "form-name": "Votre nom",
+    "form-tel": "Numéro de téléphone",
+    "form-mail": "E-mail (facultatif)",
+    "form-comment": "Commentaire (facultatif)",
+    "form-btn": "Envoyer le formulaire"
 }
