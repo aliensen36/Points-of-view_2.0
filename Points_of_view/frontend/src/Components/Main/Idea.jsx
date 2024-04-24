@@ -57,6 +57,7 @@ function Idea() {
                         value={formData.name}
                         onChange={handleChange}
                     />
+                    <div className="idea-form-container">
                     <input
                         type="tel"
                         placeholder={t('form-tel')}
@@ -71,13 +72,14 @@ function Idea() {
                         value={formData.email}
                         onChange={handleChange}
                     />
+                    </div>
                     <textarea
                         placeholder={t('form-comment')}
                         name="comment"
                         value={formData.comment}
                         onChange={handleChange}
                     />
-                    <button type="submit">{t('form-btn')}</button>
+                    <button type="submit" className="idea-form-btn">{t('form-btn')} </button>
                 </form>
             </div>
         </div>
