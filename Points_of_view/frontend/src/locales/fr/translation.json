@@ -27,5 +27,10 @@
     "form-tel": "Numéro de téléphone",
     "form-mail": "E-mail (facultatif)",
     "form-comment": "Commentaire (facultatif)",
-    "form-btn": "Envoyer le formulaire"
+    "form-btn": "Envoyer le formulaire",
+    "nav-subtitle-1": "Меnu",
+    "portfolio": "Travaux",
+    "nav-subtitle-2": "Contacts",
+    "tel": "Numéro de téléphone: ",
+    "privacy": "Privacy policy"
 }
