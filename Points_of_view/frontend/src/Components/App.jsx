@@ -7,6 +7,7 @@ import Projects from './Main/Projects.jsx';
 import Mission from './Main/Mission.jsx';
 import Team from './Main/Team.jsx';
 import Idea from './Main/Idea.jsx';
+import Footer from './Footer/Footer.jsx';
 import '../Styles/App.css';
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
           </section>
         </main>
         <footer className="footer">
-
+          <Footer />
         </footer>
       </div>
     </LanguageProvider>
