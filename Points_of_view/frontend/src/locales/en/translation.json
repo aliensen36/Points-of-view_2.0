@@ -22,5 +22,10 @@
     "team-card-role-1": "Laboratory curator",
     "team-card-role-2": "Digital artist",
     "team-card-role-3": "Musician, sound designer",
-    "idea-text": "Our laboratory is open to new proposals and cooperation."
+    "idea-text": "Our laboratory is open to new proposals and cooperation.",
+    "form-name": "Your name",
+    "form-tel": "Phone number",
+    "form-mail": "E-mail (optional)",
+    "form-comment": "Comment (optional)",
+    "form-btn": "Send the form"
 }
