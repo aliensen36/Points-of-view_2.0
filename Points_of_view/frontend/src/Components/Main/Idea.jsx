@@ -31,14 +31,41 @@ function Idea() {
         // Handle form submission here
         console.log('Form submitted:', formData);
         // You can add logic here to handle form submission, like sending data to server, etc.
+        const csrfToken = getCookie('csrftoken');  // Функция для получения CSRF токена из cookies
+
+        const headers = {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': csrfToken  // Добавляем CSRF токен в заголовки
+        };
+
         fetch('http://127.0.0.1:8000/send_idea/', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
+            headers: headers,
             body: JSON.stringify(formData),
-            // body: fd,
         })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+
+        // Функция для получения CSRF токена из cookies
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
     };
 
     return (
