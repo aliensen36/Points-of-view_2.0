@@ -31,6 +31,14 @@ function Idea() {
         // Handle form submission here
         console.log('Form submitted:', formData);
         // You can add logic here to handle form submission, like sending data to server, etc.
+        fetch('http://127.0.0.1:8000/send_idea/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+            // body: fd,
+        })
     };
 
     return (
