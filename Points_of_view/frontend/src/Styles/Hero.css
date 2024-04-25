@@ -31,3 +31,42 @@
     padding-bottom: 20px;
     width: 480px;
 }
+
+@media (max-width: 1439px) {
+    .hero-container {
+        padding-top: 50px;
+    }
+
+    .hero-title {
+        transform: translateX(-10px);
+        margin-bottom: 22px;
+    }
+
+    .hero-subtitle {
+        margin-left: 236px;
+    }
+
+    .hero-btn {
+        margin-left: 236px;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 150%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 450px;
+        margin-bottom: 39px;
+    }
+}
+
+@media (max-width: 999px) {
+    .hero-title {
+        transform: translateX(-3px);
+        margin-bottom: 44px;
+    }
+
+    .hero-btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 340px;
+    }
+}

@@ -36,6 +36,7 @@ function Header() {
                 <button onClick={() => changeColorBtn("ru")} className={`lang-change-btn ${language === 'ru' ? 'lang-change-btn--active' : ''}`}>Ru</button>
                 <button onClick={() => changeColorBtn("en")} className={`lang-change-btn ${language === 'en' ? 'lang-change-btn--active' : ''}`}>En</button>
                 <button onClick={() => changeColorBtn("fr")} className={`lang-change-btn ${language === 'fr' ? 'lang-change-btn--active' : ''}`}>Fr</button>
+                <button className="header-menu">{t("menu")}</button>
             </div>
         </div>
     );

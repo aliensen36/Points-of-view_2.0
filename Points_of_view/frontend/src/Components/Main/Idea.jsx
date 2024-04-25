@@ -15,7 +15,7 @@ function Idea() {
         name: '',
         phone: '',
         email: '',
-        comment: ''
+        message: ''
     });
 
     const handleChange = (e) => {
@@ -75,8 +75,8 @@ function Idea() {
                     </div>
                     <textarea
                         placeholder={t('form-comment')}
-                        name="comment"
-                        value={formData.comment}
+                        name="message"
+                        value={formData.message}
                         onChange={handleChange}
                     />
                     <button type="submit" className="idea-form-btn">{t('form-btn')} </button>

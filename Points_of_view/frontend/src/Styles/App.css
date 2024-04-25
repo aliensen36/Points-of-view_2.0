@@ -57,3 +57,26 @@ body {
 .footer {
   background-color: var(--Pink);
 }
+
+@media (max-width: 1439px) {
+  .container {
+    max-width: 920px;
+  }
+
+  .paragraph {
+    margin-bottom: 22px;
+    max-width: 685px;
+    font-size: 25px;
+    line-height: 150%;
+  }
+
+  .paragraph:last-of-type {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 999px) {
+  .container {
+    max-width: 700px;
+  }
+}
