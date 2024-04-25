@@ -9,9 +9,9 @@ function Mission() {
     const { t } = useTranslation();
 
     return <div className="container">
-        <div className="mission-continer">
+        <div className="mission-container">
             <Subtitle text={t("mission-subtitle")} classNameSecond="mission-subtitle" />
-            <div className="who-picture">
+            <div className="mission-picture">
                 <img src={Shapes} alt="shapes" />
             </div>
         </div>

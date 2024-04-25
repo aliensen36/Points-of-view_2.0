@@ -19,3 +19,35 @@
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
+@media (max-width: 1439px) {
+    .who-container {
+        max-width: 685px;
+        padding-top: 26px;
+    }
+
+    .who-subtitle {
+        margin-bottom: 35px;
+    }
+
+    .who-picture {
+        width: 215px;
+        height: 215px;
+    }
+
+    .who-subtitle-img {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 999px) {
+    .who-container {
+        max-width: 520px;
+    }
+
+    .who-picture {
+        width: 160px;
+        height: 160px;
+    }
+}

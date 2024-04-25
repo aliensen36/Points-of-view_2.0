@@ -27,9 +27,11 @@ function Team() {
                 <Subtitle text={t("team-subtitle")} classNameSecond="team-subtitle" />
                 <Paragraph text={t("team-p1")} classNameSecond="paragraph-team" />
                 <div className="team-cards-container">
-                    <Card image={Image1} subtitle={t("team-card-subtitle-1")} role={t("team-card-role-1")} classNameSecond="team-card-1" />
-                    <Card image={Image2} subtitle={t("team-card-subtitle-2")} role={t("team-card-role-2")} classNameSecond="team-card-2" />
-                    <Card image={Image3} subtitle={t("team-card-subtitle-3")} role={t("team-card-role-3")} classNameSecond="team-card-3" />
+                    <div className="team-cards-ribbon">
+                        <Card image={Image1} subtitle={t("team-card-subtitle-1")} role={t("team-card-role-1")} classNameSecond="team-card-1" />
+                        <Card image={Image2} subtitle={t("team-card-subtitle-2")} role={t("team-card-role-2")} classNameSecond="team-card-2" />
+                        <Card image={Image3} subtitle={t("team-card-subtitle-3")} role={t("team-card-role-3")} classNameSecond="team-card-3" />
+                    </div>
                 </div>
                 <button className="team-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">

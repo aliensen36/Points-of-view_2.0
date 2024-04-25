@@ -32,14 +32,17 @@ function Footer() {
                     </ul>
                 </nav>
                 <div className="footer-contacts">
-                    <h3 className="footer-nav-subtitle">
-                        {t("nav-subtitle-2")}
-                    </h3>
-                    <ul className="footer-nav-list">
-                        <li className="footer-nav-item">andrey.gunyavin@gmail.com</li>
-                        <li className="footer-nav-item">pointsofview.ru</li>
-                        <li className="footer-nav-item">{t("tel")}<span>8&nbsp;(916)&nbsp;955&#8209;29&#8209;26</span></li>
-                    </ul>
+                    <div className="footer-contacts-container">
+                        <h3 className="footer-nav-subtitle">
+                            {t("nav-subtitle-2")}
+                        </h3>
+                        <ul className="footer-nav-list">
+                            <li className="footer-nav-item">andrey.gunyavin@gmail.com</li>
+                            <li className="footer-nav-item">pointsofview.ru</li>
+                            <li className="footer-nav-item">{t("tel")}<span>8&nbsp;(916)&nbsp;955&#8209;29&#8209;26</span></li>
+                        </ul>
+                    </div>
+
                     <ul className="footer-contacts-icons">
                         <li className="footer-contacts-icon">
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">

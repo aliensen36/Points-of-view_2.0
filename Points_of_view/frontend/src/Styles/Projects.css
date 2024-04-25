@@ -17,3 +17,31 @@
 .project-img {
     margin-bottom: 40px;
 }
+
+@media (max-width: 1439px) {
+    .projects-container {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        max-width: 685px;
+    }
+
+    .projects-subtitle {
+        font-size: 40px;
+    }
+
+    .project-img {
+        margin-bottom: 20px;
+    }    
+}
+
+@media (max-width: 999px) {
+    .projects-container {
+        max-width: 520px;
+    }
+
+    .projects-subtitle {
+        margin-bottom: 31px;
+    }
+}
+
+

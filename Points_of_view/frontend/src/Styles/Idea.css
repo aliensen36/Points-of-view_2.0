@@ -28,7 +28,6 @@
 
 .idea-form input,
 .idea-form textarea {
-    /* height: 70px; */
     padding: 20px 40px;
     border: none;
     border-radius: 100px;
@@ -54,11 +53,6 @@ input[type="email"] {
     outline: none;
 }
 
-/* .idea-form input:active,
-.idea-form textarea:active {
-    outline: none; 
-} */
-
 .idea-form-btn {
     color: var(--Pink);
     background-color: var(--White);
@@ -69,3 +63,44 @@ input[type="email"] {
     line-height: 150%;
     border-radius: 50px;
 }
+
+@media (max-width: 1439px) {
+    .idea-container {
+        max-width: 685px;
+        padding-top: 50px;
+        overflow-x: hidden;
+    }
+
+    .idea-subtitle {
+        width: 120%;
+        margin-bottom: 40px;
+    }
+
+    .idea-form,
+    .idea-form-container {
+        gap: 10px;
+    }
+
+    .idea-form input,
+    .idea-form textarea {
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+    
+    .idea-form-btn {
+        font-size: 25px;
+        padding: 16px 40px;
+    }
+}
+
+@media (max-width: 999px) {
+    .idea-container {
+        max-width: 520px;
+    }
+
+    .idea-subtitle {
+        width: 112%;
+    }
+}
+
+
