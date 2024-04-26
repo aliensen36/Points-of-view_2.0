@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Message Notification</title>
+    <style>
+        .message-block {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .sender-name {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>New message from your website</h1>
+    <p>
+        A message has been sent to you from your website<br>
+        from <span class="sender-name">{{ instance.name }}</span> ({{ instance.phone }}, {{ instance.email }}):
+    </p>
+    <div class="message-block">
+        <p>
+            {{ instance.message }}
+        </p>
+    </div>
+    <p>
+        Created: {{ instance.created }}
+    </p>
+</body>
+</html>
