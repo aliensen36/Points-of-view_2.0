@@ -2,6 +2,8 @@
     position: sticky;
     top: 0px;
     background-color: var(--White);
+    z-index: 100;
+    opacity: 1;
 }
 
 .header-container {
@@ -28,6 +30,8 @@
 }
 
 .lang-change-btn {
+    position: relative;
+    outline: none;
     width: 50px;
     height: 50px;
     font-size: 20px;
@@ -38,9 +42,35 @@
     transition: 0.3s color ease-in-out, 0.3s background-color ease-in-out;
 }
 
+.lang-change-btn::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: inherit;
+    border: 3px solid var(--Pink-Border);
+    opacity: 0;
+    outline: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lang-change-btn:focus-visible::after {
+    opacity: 1;
+}
+
 .lang-change-btn:hover {
     color: var(--White);
     background-color: var(--Pink-Button-Hover);
+}
+
+.lang-change-btn:active {
+    background-color: var(--Pink-Button-Active);
+}
+
+.lang-change-btn:active::after {
+    opacity: 0;
 }
 
 .lang-change-btn:not(:last-child) {
@@ -85,7 +115,8 @@
         border-radius: 50px;
         background-color: var(--Pink);
         color: var(--White);
-        padding: 10px 71px 10px 20px;;
+        padding: 10px 71px 10px 20px;
+        ;
         background-image: url('../Images/menu-btn-icon.svg');
         background-position: center right 20px;
         background-repeat: no-repeat;

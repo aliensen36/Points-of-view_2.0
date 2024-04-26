@@ -18,6 +18,8 @@
 }
 
 .hero-btn {
+    position: relative;
+    outline: none;
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 500;
@@ -30,6 +32,37 @@
     padding-top: 20px;
     padding-bottom: 20px;
     width: 480px;
+    transition: 0.3s color ease-in-out, 0.3s background-color ease-in-out;
+}
+
+.hero-btn::after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: -7px;
+    right: -7px;
+    bottom: -7px;
+    border-radius: inherit;
+    border: 3px solid var(--Pink-Border);
+    opacity: 0;
+    outline: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hero-btn:focus-visible::after {
+    opacity: 1;
+}
+
+.hero-btn:hover {
+    background-color: var(--Pink-Button-Hover);
+}
+
+.hero-btn:active {
+    background-color: var(--Pink-Button-Active);
+}
+
+.hero-btn:active::after {
+    opacity: 0;
 }
 
 @media (max-width: 1439px) {
