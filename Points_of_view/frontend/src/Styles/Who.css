@@ -51,3 +51,27 @@
         height: 160px;
     }
 }
+
+@media (max-width: 710px) {
+    .who-container {
+        max-width: 252px;
+        padding-bottom: 41px;
+    }
+
+    .who-subtitle {
+        margin-bottom: 15px;
+    }
+
+    .who-picture-container {
+        gap: 10px;
+    }
+
+    .who-picture {
+        width: 77px;
+        height: 77px;
+    }
+
+    .who-subtitle-img {
+        padding-bottom: 28px;
+    }
+}

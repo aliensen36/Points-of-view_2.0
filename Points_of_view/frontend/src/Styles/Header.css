@@ -101,4 +101,21 @@
     .header-menu {
         margin-left: 0px;
     }
+
+    .lang-change-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 710px) {
+    .header-logo {
+        width: 33%;
+        transform: translateX(-24px);
+    }
+
+    .header-menu {
+        font-size: 16px;
+        padding: 5px 40px 5px 18px;
+        background-size: 17%;
+    }
 }

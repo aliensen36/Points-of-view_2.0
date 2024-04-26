@@ -10,7 +10,7 @@
 .hero-subtitle {
     font-size: 25px;
     font-weight: 300;
-    line-height: 37.5px;
+    line-height: 150%;
     color: var(--Text-Grey);
     margin-left: 400px;
     margin-bottom: 30px;
@@ -68,5 +68,32 @@
         padding-top: 10px;
         padding-bottom: 10px;
         width: 340px;
+    }
+}
+
+@media (max-width: 710px) {
+    .hero-container {
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+
+    .hero-title {
+        transform: translateX(-11px);
+        margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+        margin-left: 88px;
+        margin-bottom: 11px;
+        font-size: 14px;
+    }
+
+    .hero-btn {
+        margin-left: 88px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        width: 165px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }

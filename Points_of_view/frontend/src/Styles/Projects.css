@@ -18,6 +18,10 @@
     margin-bottom: 40px;
 }
 
+.project-btn {
+    display: none;
+}
+
 @media (max-width: 1439px) {
     .projects-container {
         padding-top: 50px;
@@ -31,7 +35,7 @@
 
     .project-img {
         margin-bottom: 20px;
-    }    
+    }
 }
 
 @media (max-width: 999px) {
@@ -44,4 +48,25 @@
     }
 }
 
+@media (max-width: 710px) {
+    .projects-container {
+        max-width: 252px;
+        padding-top: 32px;
+        padding-bottom: 17px;
+    }
 
+    .projects-subtitle {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .project-meditate-img,
+    .project-think-img {
+        display: none;
+    }
+
+    .project-btn {
+        display: inline-block;
+        margin-right: 30px;
+    }
+}

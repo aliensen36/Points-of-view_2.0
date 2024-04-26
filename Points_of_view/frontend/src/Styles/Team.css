@@ -87,4 +87,44 @@
     }
 }
 
+@media (max-width: 710px) {
+    .team-container {
+        max-width: 252px;  
+        padding-top: 44px;
+        padding-bottom: 23px;
+    }
+
+    .team-subtitle {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .team-cards-container {
+        margin-bottom: 15px;
+    }
+
+    .team-cards-ribbon {
+        gap: 10px;
+        width: 530px;
+    }
+
+    .team-card {
+        padding: 20px 20px 20px;
+    }
+
+    .team-card-image {
+        margin-bottom: 16px;
+    }
+
+    .team-card-subtitle {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .team-btn svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 
