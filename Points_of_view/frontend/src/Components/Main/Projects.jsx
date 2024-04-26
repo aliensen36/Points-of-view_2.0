@@ -35,6 +35,16 @@ function Projects() {
                 <div className="project-img project-think-img">
                     <img src={getThinkImage()} alt="think" />
                 </div>
+                <button className="project-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
+                        <path d="M0.933438 22.5777L12.2104 33L14.914 30.5014L6.00155 22.2644L40 22.2814L39.9979 18.7464L5.99948 18.7294L14.9023 10.5014L12.1958 8L0.930995 18.411C-0.310836 19.5587 -0.310641 21.4279 0.933438 22.5777Z" fill="white" />
+                    </svg>
+                </button>
+                <button className="project-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 41 40" fill="none">
+                        <path d="M39.121 18.4167L27.8498 8L25.1447 10.5L34.0526 18.7325H0.0532229L0.0532227 22.2675H34.0526L25.1447 30.5L27.8498 33L39.121 22.5833C40.3635 21.435 40.3644 19.5658 39.121 18.4167Z" fill="white" />
+                    </svg>
+                </button>
             </div>
         </div>
     );
