@@ -3,6 +3,7 @@
     margin-left: auto;
     padding-top: 80px;
     padding-bottom: 80px;
+    position: relative;
 }
 
 .idea-subtitle {
@@ -64,6 +65,37 @@ input[type="email"] {
     border-radius: 50px;
 }
 
+.modal {
+    position: absolute;
+    top: 366px;
+    left: -10px;
+}
+
+.modal-content {
+    padding: 50px;
+    color: var(--White);
+    background-color: var(--Pink);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    border-radius: 100px;
+}
+
+.modal-content p {
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+.modal-close {
+    width: 850px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: var(--Pink);
+    background-color: var(--White);
+}
+
+
 @media (max-width: 1439px) {
     .idea-container {
         max-width: 685px;
@@ -86,10 +118,22 @@ input[type="email"] {
         padding: 15px 20px;
         font-size: 18px;
     }
-    
+
     .idea-form-btn {
         font-size: 25px;
         padding: 16px 40px;
+    }
+
+    .modal {
+        top: 200px;
+    }
+
+    .modal-content {
+        border-radius: 50px;
+    }
+
+    .modal-close {
+        width: 600px;
     }
 }
 
@@ -101,11 +145,19 @@ input[type="email"] {
     .idea-subtitle {
         width: 112%;
     }
+
+    .modal {
+        top: 170px;
+    }
+    
+    .modal-close {
+        width: 480px;
+    }
 }
 
 @media (max-width: 710px) {
     .idea-container {
-        max-width: 252px; 
+        max-width: 252px;
         padding-top: 31px;
         padding-bottom: 31px;
     }
@@ -115,7 +167,7 @@ input[type="email"] {
         margin-bottom: 15px;
     }
 
-    .idea-form input, 
+    .idea-form input,
     .idea-form textarea {
         padding: 10px 15px;
         font-size: 12px;
@@ -129,6 +181,21 @@ input[type="email"] {
         font-size: 16px;
         padding: 10px 15px;
     }
+
+    .modal {
+        top: 85px;
+    }
+
+    .modal-content {
+        font-size: 15px;
+    }
+
+    .modal-content p {
+        margin-bottom: 155px;
+    }
+    
+    .modal-close {
+        width: 190px;
+        padding: 10px 40px;
+    }
 }
-
-

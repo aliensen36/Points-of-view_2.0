@@ -18,6 +18,9 @@ function Idea() {
         message: ''
     });
 
+    const [modalVisible, setModalVisible] = useState(false);
+    const [modalMessage, setModalMessage] = useState('');
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -28,17 +31,30 @@ function Idea() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission here
-        console.log('Form submitted:', formData);
-        // You can add logic here to handle form submission, like sending data to server, etc.
+
         fetch('http://127.0.0.1:8000/send_idea/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(formData),
-            // body: fd,
-        })
+        }).then(() => {
+            setModalMessage('Спасибо! Ваш отклик уже у нас!');
+            setModalVisible(true);
+            setFormData({
+                name: '',
+                phone: '',
+                email: '',
+                message: ''
+            });
+        }).catch(error => {
+            setModalMessage('Произошла ошибка при отправке сообщения');
+            setModalVisible(true);
+        });
+    };
+
+    const closeModal = () => {
+        setModalVisible(false);
     };
 
     return (
@@ -58,20 +74,20 @@ function Idea() {
                         onChange={handleChange}
                     />
                     <div className="idea-form-container">
-                    <input
-                        type="tel"
-                        placeholder={t('form-tel')}
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                    />
-                    <input
-                        type="email"
-                        placeholder={t('form-mail')}
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                    />
+                        <input
+                            type="tel"
+                            placeholder={t('form-tel')}
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
+                        />
+                        <input
+                            type="email"
+                            placeholder={t('form-mail')}
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                        />
                     </div>
                     <textarea
                         placeholder={t('form-comment')}
@@ -81,6 +97,15 @@ function Idea() {
                     />
                     <button type="submit" className="idea-form-btn">{t('form-btn')} </button>
                 </form>
+
+                {modalVisible && (
+                    <div className="modal">
+                        <div className="modal-content">
+                            <p>{modalMessage}</p>
+                            <button className="modal-close" onClick={closeModal}>Закрыть</button>
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
     )
