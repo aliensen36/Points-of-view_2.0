@@ -4,6 +4,7 @@
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
+    z-index: 1;
 }
 
 .idea-subtitle {
@@ -55,6 +56,8 @@ input[type="email"] {
 }
 
 .idea-form-btn {
+    position: relative;
+    outline: none;
     color: var(--Pink);
     background-color: var(--White);
     padding: 20px 40px;
@@ -63,6 +66,36 @@ input[type="email"] {
     font-weight: 500;
     line-height: 150%;
     border-radius: 50px;
+}
+
+.idea-form-btn::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: inherit;
+    border: 3px solid var(--Pink-Border);
+    opacity: 0;
+    outline: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.idea-form-btn:focus-visible::after {
+    opacity: 1;
+}
+
+.idea-form-btn:hover {
+    color: var(--Pink-Button-Hover);
+}
+
+.idea-form-btn:active {
+    color: var(--Pink-Button-Active);
+}
+
+.lang-change-btn:active::after {
+    opacity: 0;
 }
 
 .modal {
@@ -88,13 +121,14 @@ input[type="email"] {
 }
 
 .modal-close {
+    position: relative;
+    outline: none;
     width: 850px;
     padding: 15px 40px;
     border-radius: 50px;
     color: var(--Pink);
     background-color: var(--White);
 }
-
 
 @media (max-width: 1439px) {
     .idea-container {
