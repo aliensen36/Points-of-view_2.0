@@ -2,7 +2,6 @@ from django.db import models
 from django.utils import timezone
 
 
-
 class Send_idea(models.Model):
     name = models.CharField(max_length=100, verbose_name="Имя")
     phone = models.CharField(max_length=20, verbose_name="Телефон")
